@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "13.2.4",
+    "next": "https://files-o6v1ev8e6-huozhi.vercel.app",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   }
