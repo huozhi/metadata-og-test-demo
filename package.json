@@ -9,7 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "https://files-o6v1ev8e6-huozhi.vercel.app",
+    "@vercel/og": "^0.4.1",
+    "next": "^13.2.5-canary.14",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   }
