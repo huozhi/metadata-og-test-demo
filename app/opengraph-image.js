@@ -1,23 +1,41 @@
-import { ImageResponse } from 'next/server'
+import fs from 'fs'
+import path from 'path'
+import { ImageResponse } from 'next/server';
+import { fileURLToPath } from 'url';
 
-export const alt = 'Open Graph'
+const font = fs.promises.readFile(path.join(fileURLToPath(import.meta.url), '../../public/Inter-Regular.woff'))
 
-export default function og() {
+export default async function handler() {
   return new ImageResponse(
     (
       <div
         style={{
-          width: '100%',
+          backgroundColor: 'white',
           height: '100%',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          fontSize: 128,
-          background: 'lavender',
+          width: '100%',
+          fontSize: 100,
+          fontFamily: '"Inter"',
+          paddingTop: '100px',
+          paddingLeft: '50px',
         }}
       >
-        Open Graph
+        Hello world!
       </div>
-    )
-  )
+    ),
+    {
+      width: 1200,
+      height: 630,
+      fonts: [
+        {
+          name: 'Inter',
+          data: await font,
+        },
+      ],
+    }
+  );
+}
+
+export const size = {
+    width: 1200,
+    height: 630
 }
