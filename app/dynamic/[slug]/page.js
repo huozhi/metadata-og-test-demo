@@ -3,7 +3,7 @@ export default function page() {
 }
 
 export async function generateMetadata() {
-  const icon = '/icon.png'
+  const icon = '/home-icon.png'
   return {
     title: 'title',
     description: 'description',
