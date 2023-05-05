@@ -3,7 +3,7 @@ import path from 'path'
 import { ImageResponse } from 'next/server';
 import { fileURLToPath } from 'url';
 
-const font = fs.promises.readFile(path.join(fileURLToPath(import.meta.url), '../../public/Inter-Regular.woff'))
+// const font = fs.promises.readFile(path.join(fileURLToPath(import.meta.url), '../../public/Inter-Regular.woff'))
 
 export default async function handler() {
   return new ImageResponse(
@@ -25,12 +25,12 @@ export default async function handler() {
     {
       width: 1200,
       height: 630,
-      fonts: [
-        {
-          name: 'Inter',
-          data: await font,
-        },
-      ],
+      // fonts: [
+      //   {
+      //     name: 'Inter',
+      //     data: await font,
+      //   },
+      // ],
     }
   );
 }
