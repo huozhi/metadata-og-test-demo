@@ -10,6 +10,7 @@ export const metadata = {
     canonical: './',
   },
   openGraph: {
+    type: 'website',
     title: 'Open Graph Title',
     description: 'Open Graph Description',
   },
