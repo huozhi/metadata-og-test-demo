@@ -11,6 +11,7 @@ export const metadata = {
   },
   openGraph: {
     title: 'Open Graph Title',
+    description: 'Open Graph Description',
   },
 }
 
