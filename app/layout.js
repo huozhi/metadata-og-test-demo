@@ -14,6 +14,13 @@ export const metadata = {
     title: 'Open Graph Title',
     description: 'Open Graph Description',
   },
+  twitter: {
+    card: 'summary_large_image',
+    site: '@site',
+    creator: '@creator',
+    title: 'Twitter Title',
+    description: 'Twitter Description',
+  }
 }
 
 export default function RootLayout({ children }) {
