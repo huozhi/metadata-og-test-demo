@@ -8,7 +8,10 @@ export const metadata = {
 
   alternates: {
     canonical: './',
-  }
+  },
+  openGraph: {
+    title: 'Open Graph Title',
+  },
 }
 
 export default function RootLayout({ children }) {
